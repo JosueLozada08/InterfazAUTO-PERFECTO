@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Casos - AutoPerfecto</title>
+    <link rel="stylesheet" href="gestionar_casos.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+    </style>
+    <header>
+        <div class="container">
+            <h1>AutoPerfecto</h1>
+            <nav>
+                <ul>
+                    <li><a href="Consultar_vehiculo.html">Consultar Vehículos</a></li>
+                    <li><a href="gestionar_casos.html">Gestionar Casos</a></li>
+                    <li><a href="configuracion.html">Configuración</a></li>
+                    <li><a href="Subasta.html">Subasta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="casos">
+            <div class="container">
+                <h2>Gestionar Casos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="numero_caso">Número de Caso:</label>
+                        <input type="text" id="numero_caso" name="numero_caso" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion_caso">Descripción:</label>
+                        <textarea id="descripcion_caso" name="descripcion_caso" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado_caso">Estado:</label>
+                        <select id="estado_caso" name="estado_caso" required>
+                            <option value="abierto">Abierto</option>
+                            <option value="en_progreso">En Progreso</option>
+                            <option value="cerrado">Cerrado</option>
+                        </select>
+                    </div>
+                    <button type="submit">Guardar Caso</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AutoPerfecto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
